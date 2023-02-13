@@ -4,10 +4,12 @@ public class Music extends Product{
 
 
     private String artist;
+    private String label;
 
     public Music() {
         super();
         artist = "";
+        label = "";
         count++;
     }
 
@@ -21,6 +23,6 @@ public class Music extends Product{
 
     @Override
     public String toString() {
-        return super.toString() + " by " + artist;
+        return super.toString() + " by " + artist + label;
     }
 }

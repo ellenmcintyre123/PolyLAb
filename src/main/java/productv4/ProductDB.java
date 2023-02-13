@@ -61,11 +61,20 @@ public class ProductDB {
         if (productCode.equalsIgnoreCase("PINK")) {
             Music myMusic = new Music();
             myMusic.setCode(productCode);
-            myMusic.setDescription("Wish you were here by PINK Floyd");
+            myMusic.setDescription("Wish you were here");
             myMusic.setPrice(8.00);
             myMusic.setArtist("PINK");
             myMusic.setLabel("Part of the Columbia group");
             p = myMusic;
+        }
+        if (productCode.equalsIgnoreCase("kdl43")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("SONY BRAVIA SMART TV KDL43WF663");
+            myTV.setPrice(819.00);
+            myTV.setScreenSize("55 Inch");
+            myTV.setManufacture("sony");
+            p = myTV;
         }
         return p;
     }
